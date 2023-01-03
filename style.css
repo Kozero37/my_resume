@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    color: #0f141e;
+    background: #f1f1f1 ;
+}
+img{
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+}
+.container{
+    max-width: 700px;
+    margin: auto;
+    margin-top: 30px;
+}
+.info-text {
+    display: flex;
+}
+.info-text p{
+    font-style: italic;
+    font-weight: bold;
+    padding: 10px 0px 0px 0px;
+}
+.lol{
+    padding-left: 20px;
+}
+.about_me{
+    color: gray;
+}
+a{
+    text-decoration: none;
+    color: gray;
+    transition: all .2s;
+}
+a:hover{
+    text-decoration: underline;
+}
+a:active{
+    color: rgb(99, 96, 98);
+}
+a:visited{
+    color: rgb(128, 162, 200);
+}
+.card{
+    border-radius: 20px; 
+    padding: 20px;
+    margin: 20px 0px;
+}
+.card ol, ul{
+    padding-left: 50px;
+}
+.card h2{
+    margin-bottom: 10px;
+}
+
+.bg-green{
+    background: #e5ffe7;
+}
+.bg-red{
+    background: #ffe5e5;
+}
+.bg-yellow{
+    background: #fff9dc;
+}
+
+.btn{
+    background: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn:hover{
+    opacity: 0.8;
+}
+
+table {
+    width: 100%;
+    border: 1px solid black;
+}
+table td{
+    text-align: center;
+    padding-top: 5px;
+}
+
+table td:nth-child(1){
+    color: gray;
+}
+.connect{
+    text-align: center;
+}
+form{
+    color: gray;
+    font-size: 14px;
+}
+.name-email{
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.name, .email{
+    width: 50%;
+    box-sizing: border-box;
+    margin-right: 20px;
+}
+
+input, textarea{
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    background: transparent;
+    padding: 15px 0px 10px;
+    border-bottom: 1px solid gray;
+    outline: 20px;
+}
+
+
+
+/* 
+table td:nth-child(1), table td:nth-child(2){
+    border-right: 1px solid black;
+} 
+table th:nth-child(1), table th:nth-child(2){
+    border-bottom: 1px solid black;
+}  */
+
+@media(max-width: 650px){
+    *{
+        font-size: 14px;
+    }
+    .info-text {
+        display: block;
+    }
+    .info-text img{
+        display: block;
+        width: 150px;
+        margin: auto;
+    }
+    .info-text p{
+        font-size: 14px;
+        text-align: center;
+        margin: auto;
+        max-width: 500px;
+    }
+    .info-text h1{
+        text-align: center;
+        font-size: 30px;
+    }
+    .lol{
+        margin-top: 20px;
+    }
+}
